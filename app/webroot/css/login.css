@@ -1,0 +1,13 @@
+/* 
+    Document   : login
+    Created on : 10/09/2012, 04:39:37 PM
+    Author     : Jose Cortes
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body.login { 
+    background: #222222 url(images/bg.jpg);
+    color: white;
+}
+
