@@ -63,9 +63,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'user',
-		'password' => 'password',
-		'database' => 'database_name',
+		'login' => 'local_bookingusr',
+		'password' => 'booking01',
+		'database' => 'local_booking',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
