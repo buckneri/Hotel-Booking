@@ -92,7 +92,7 @@
  *
  * And uncomment the App.baseUrl below:
  */
-	//Configure::write('App.baseUrl', env('SCRIPT_NAME'));
+	Configure::write('App.baseUrl', env('SCRIPT_NAME'));
 
 /**
  * Uncomment the define below to use CakePHP prefix routes.
@@ -184,12 +184,12 @@
 /**
  * A random string used in security hashing methods.
  */
-	Configure::write('Security.salt', 'DYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mi');
+	Configure::write('Security.salt', 'AYhG93b0qyJfIxfs2guVoUubWwvniR2G0FgaC9mA');
 
 /**
  * A random numeric string (digits only) used to encrypt/decrypt strings.
  */
-	Configure::write('Security.cipherSeed', '76859309657453542496749683645');
+	Configure::write('Security.cipherSeed', '06859309657453542496749683640');
 
 /**
  * Apply timestamps with the last modified time to static assets (js, css, images).
@@ -276,3 +276,17 @@ Cache::config('_cake_model_', array(
 	'serialize' => ($engine === 'File'),
 	'duration' => $duration
 ));
+
+/**
+ * Configure Url
+ */
+
+// Local, _NO URL re-writing_
+Configure::write('UrlBase', '/booking/index.php/');
+Configure::write('UrlFull', 'http://localhost/booking/index.php/');
+Configure::write('DomainName', 'localhost');
+
+// Remote, with URL re-writing
+//Configure::write('UrlBase', '/booking/');
+//Configure::write('UrlFull', 'http://mydomain.com/booking/');
+//Configure::write('DomainName', 'mydomain.com');
