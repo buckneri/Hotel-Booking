@@ -32,4 +32,29 @@ App::uses('Controller', 'Controller');
  * @link http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
 class AppController extends Controller {
+    
+    public $components = array('Session', 'Auth' => array(
+        'authorize' => 'Controller',
+        'logoutRedirect' => '/admin/logout',
+        'authError' => 'Acceso no autorizado'
+    ));
+    
+    function beforeFilter(){
+        // El ususario esta intentando acceder al area administrativa
+        if(isset($this->params['admin']) && $this->params['admin'] == true){
+            // Se configura el modelo de autenticacion
+            $this->Auth->authenticate = array(
+                'Form' => array(
+                    'userModel' => 'Usuario',
+                    'fields' => array(
+                        'username' => 'email',
+                        'password' => 'password'
+                    )
+                )
+            );
+            // Se configura la accion por defecto para login
+            $this->Auth->loginAction = '/admin';
+        }
+    }
+    
 }
