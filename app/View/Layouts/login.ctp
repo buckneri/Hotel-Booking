@@ -9,7 +9,7 @@
         <?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('bootstrap');                                
+		echo $this->Html->css('bootstrap');                
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -18,7 +18,8 @@
         
     </head>
     <body class="login">
-        <div id="container">
+        <h1>Hotel Booking</h1>
+        <div id="container" class="container">
             <?php echo $this->fetch('content'); ?>
         </div>
     </body>

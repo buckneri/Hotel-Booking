@@ -15,6 +15,7 @@ class UsuariosController extends AppController{
     
     function admin_login(){
         $this->layout = 'login';
+        $this->set('title_for_layout', 'Administración');
     }
 }
 

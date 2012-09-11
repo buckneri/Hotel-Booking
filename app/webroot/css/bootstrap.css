@@ -10,3 +10,305 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+h1 {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+h1 h2 h3 h4 h5 h6 {
+    font-family: inherit;
+    font-weight: bold;
+}
+
+form {
+    margin: 0 0 18px;
+}
+
+fieldset {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+label, input, button, select, textarea{
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea{
+    margin-left: 0;
+}
+
+input, textarea{
+    width: 210px;
+}
+
+input, button, select, textarea {
+    font-family: Arial, sans-serif;
+}
+
+.container::before, .container::after {
+    display: table;
+    content: "";
+}
+
+.container::after {
+    clear: both;
+}
+
+.control-group {
+    margin-bottom: 9px;
+}
+
+.form-horizontal 
+.control-group {
+    margin-bottom: 18px;
+}
+
+.form-horizontal
+.control-group::before, .form-horizontal
+.control-group::after{
+    display: table;
+    content: "";
+}
+
+.form-horizontal
+.control-group::after{
+    clear: both;
+}
+
+
+.form-horizontal
+.control-label{
+    float: left;
+    width: 140px;
+    padding-top: 5px;
+    text-align: right;
+}
+
+.form-horizontal
+.controls{
+    margin-left: 160px;
+}
+
+textarea, 
+input[type="text"], 
+input[type="password"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="date"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="number"], 
+input[type="email"], 
+input[type="url"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="color"], 
+.uneditable-input {
+    background-color: white;
+    border: 1px solid #CCC;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+select, 
+textarea, 
+input[type="text"], 
+input[type="password"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="date"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="number"], 
+input[type="email"], 
+input[type="url"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="color"], 
+.uneditable-input {
+    display: inline-block;
+    height: 18px;
+    padding: 4px;
+    margin-bottom: 9px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #555;
+}
+
+
+.radio, 
+.checkbox {
+    min-height: 18px;
+    padding-left: 18px;
+}
+
+.input-large {
+    width: 210px;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 4px 10px 4px;
+    margin-bottom: 0;
+    font-size: 13px;
+    line-height: 18px;
+    color: #333;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: whiteSmoke;
+    background-image: -moz-linear-gradient(top, white, #E6E6E6);
+    background-image: -ms-linear-gradient(top, white, #E6E6E6);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#E6E6E6));
+    background-image: -webkit-linear-gradient(top, white, #E6E6E6);
+    background-image: -o-linear-gradient(top, white, #E6E6E6);
+    background-image: linear-gradient(top, white, #E6E6E6);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='ie-hex-str(white)', endColorstr='ie-hex-str(#e6e6e6)', GradientType=0);
+    border-color: #E6E6E6 #E6E6E6 #BFBFBF;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) fadein(rgba(0, 0, 0, 0.1), 15%);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    border: 1px solid #CCC;
+    border-bottom-color: #B3B3B3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn-primary {
+    background-color: #85B624;
+    background-image: -moz-linear-gradient(top, #8CBF26, #7CAA22);
+    background-image: -ms-linear-gradient(top, #8CBF26, #7CAA22);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#8CBF26), to(#7CAA22));
+    background-image: -webkit-linear-gradient(top, #8CBF26, #7CAA22);
+    background-image: -o-linear-gradient(top, #8CBF26, #7CAA22);
+    background-image: linear-gradient(top, #8CBF26, #7CAA22);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='ie-hex-str(#8cbf26)', endColorstr='ie-hex-str(#7caa22)', GradientType=0);
+    border-color: #7CAA22 #7CAA22 #4E6A15;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+.btn {
+    border-color: #CCC;
+}
+
+.btn-primary, 
+.btn-primary:hover, 
+.btn-warning, 
+.btn-warning:hover, 
+.btn-danger, 
+.btn-danger:hover, 
+.btn-success, 
+.btn-success:hover, 
+.btn-info, 
+.btn-info:hover, 
+.btn-inverse, 
+.btn-inverse:hover, 
+.btn-selections, 
+.btn-selections:hover, 
+.btn-premium, 
+.btn-premium:hover
+{
+    color: white;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn-large {
+    padding: 9px 14px;
+    font-size: 15px;
+    line-height: normal;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+button, 
+input[type="button"], 
+input[type="reset"], 
+input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button;
+}
+
+button, input {
+    line-height: normal;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin: 3px 3px;
+    line-height: normal;
+    cursor: pointer;
+}
+
+input[type="submit"], 
+input[type="reset"], 
+input[type="button"], 
+input[type="radio"], 
+input[type="checkbox"] {
+    width: auto;
+}
+
+.form-search input, 
+.form-search textarea, 
+.form-search select, 
+.form-search, 
+.help-inline, 
+.form-search 
+.uneditable-input, 
+.form-search 
+.input-prepend, 
+.form-search 
+.input-append, 
+.form-inline input, 
+.form-inline textarea, 
+.form-inline select, 
+.form-inline .help-inline, 
+.form-inline .uneditable-input, 
+.form-inline .input-prepend, 
+.form-inline .input-append, 
+.form-horizontal input, 
+.form-horizontal textarea, 
+.form-horizontal select, 
+.form-horizontal .help-inline, 
+.form-horizontal .uneditable-input, 
+.form-horizontal .input-prepend, 
+.form-horizontal .input-append {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.radio input[type="radio"], 
+.checkbox input[type="checkbox"] {
+    float: left;
+    margin-left: -18px;
+}
