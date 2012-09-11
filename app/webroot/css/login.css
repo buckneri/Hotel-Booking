@@ -14,6 +14,18 @@ body.login {
 body.login .container {
     width: 460px;
     margin: 0 auto;
+    padding: 14px;    
+    border: 1px solid #dcdcdc;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;    
+    background: #f0f0f0;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#f0f0f0));
+    background-image: -webkit-linear-gradient(top, #fefefe, #f0f0f0);
+    background-image: -moz-linear-gradient(top, #fefefe, #f0f0f0);
+    background-image: -ms-linear-gradient(top, #fefefe, #f0f0f0);
+    background-image: -o-linear-gradient(top, #fefefe, #f0f0f0);
+    background-image: linear-gradient(top, #fefefe, #f0f0f0);
 }
 
 

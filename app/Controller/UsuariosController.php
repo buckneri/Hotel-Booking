@@ -17,6 +17,10 @@ class UsuariosController extends AppController{
         parent::beforeFilter();
     }
     
+    function isAuthorized(){
+        return true;
+    }
+    
     function admin_login(){
         $this->layout = 'login';
         $this->set('title_for_layout', 'Administración');
@@ -41,7 +45,9 @@ class UsuariosController extends AppController{
         }
     }
     
-    
+    function admin_index(){
+        $this->layout = 'admin';
+    }
     
     function admin_pass($user){
         $this->autoRender = false;

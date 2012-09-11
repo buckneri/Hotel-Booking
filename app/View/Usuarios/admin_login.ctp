@@ -1,8 +1,4 @@
-<?php
-    $this->start('css');
-    echo $this->Html->css('login');
-    $this->end();
-?>
+
 <h3>Ingreso al sistema de administraci&oacute;n</h3>
 <?php echo $this->Form->create('Usuario', array('id' => 'frmLogin', 'class' => 'form-horizontal'))?>
 <fieldset class="custom-align-left">

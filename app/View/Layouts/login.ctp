@@ -9,7 +9,8 @@
         <?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('bootstrap');                
+		echo $this->Html->css('bootstrap');
+                echo $this->Html->css('login');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');

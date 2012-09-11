@@ -278,6 +278,12 @@ Cache::config('_cake_model_', array(
 ));
 
 /**
+ * Configure Logos 
+ */
+Configure::write('AdminLogo', 'logo.png');
+
+
+/**
  * Configure Url
  */
 
