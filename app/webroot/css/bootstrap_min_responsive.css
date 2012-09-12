@@ -1,0 +1,19 @@
+/* 
+    Document   : bootstrap_min_responsive
+    Created on : 12/09/2012, 02:17:02 PM
+    Author     : Jose Cortes
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+@media(min-width: 1200px){
+    .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+        width: 1170px;
+    }    
+}
+
+
+
+
+

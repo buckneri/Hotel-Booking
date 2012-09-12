@@ -23,6 +23,7 @@ class UsuariosController extends AppController{
     
     function admin_login(){
         $this->layout = 'login';
+        $this->layout = 'login_new';
         $this->set('title_for_layout', 'Administración');
         if($this->request->is('post')){
             // Hacer login del usuario. Se usa por defecto los datos del request
@@ -54,7 +55,8 @@ class UsuariosController extends AppController{
     }
     
     function admin_index(){
-        $this->layout = 'admin';        
+        $this->layout = 'admin';
+        $this->layout = 'admin_new';
         $session = $this->Session->read();
         $expires = new DateTime('@'.$session['Config']['time']);
         $expires->setTimezone(new DateTimeZone("America/Costa_Rica"));

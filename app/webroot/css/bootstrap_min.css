@@ -1,0 +1,494 @@
+/* 
+    Document   : bootstrap_min
+    Created on : 12/09/2012, 02:07:12 PM
+    Author     : Jose Cortes
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body {
+    margin: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #333;
+    background-color: white;
+}
+
+fieldset {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body.login { 
+    /*background: #222222 url(images/bg.jpg);*/
+    color: black;
+}
+
+body.login h1{
+    /*background: url(images/logo.png) no-repeat center;*/
+    
+    width: 277px;
+    height: 45px;
+    margin: 0px auto 0px;
+    text-align: center;
+    
+}
+
+.form-horizontal 
+.control-group {
+    margin-bottom: 18px;
+}
+
+.form-horizontal
+.control-group::before, .form-horizontal
+.control-group::after{
+    display: table;
+    content: "";
+}
+
+.form-horizontal
+.control-group::after{
+    clear: both;
+}
+
+
+.form-horizontal
+.control-label{
+    float: left;
+    width: 100px;
+    padding-top: 5px;
+    text-align: right;
+}
+
+.form-horizontal
+.controls{
+    margin-left: 130px;
+}
+
+textarea, 
+input[type="text"], 
+input[type="password"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="date"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="number"], 
+input[type="email"], 
+input[type="url"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="color"], 
+.uneditable-input {
+    background-color: white;
+    border: 1px solid #CCC;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+    -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+    transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+select, 
+textarea, 
+input[type="text"], 
+input[type="password"], 
+input[type="datetime"], 
+input[type="datetime-local"], 
+input[type="date"], 
+input[type="month"], 
+input[type="time"], 
+input[type="week"], 
+input[type="number"], 
+input[type="email"], 
+input[type="url"], 
+input[type="search"], 
+input[type="tel"], 
+input[type="color"], 
+.uneditable-input {
+    display: inline-block;
+    height: 18px;
+    padding: 4px;
+    margin-bottom: 9px;
+    font-size: 13px;
+    line-height: 18px;
+    color: #555;
+}
+
+ul, ol {
+    padding: 0;
+    margin: 0 0 9px 25px;
+}
+
+ul {
+    list-style: disc;
+}
+
+li {
+    line-height: 18px;
+}
+
+a {
+    color: #08C;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+p {
+    margin: 0 0 9px;
+}
+
+blockquote {
+    padding: 0 0 0 15px;
+    margin: 0 0 18px;
+    border-left: 5px solid #EEE;
+}
+
+blockquote p {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22.5px;
+}
+
+/** Container **/
+
+body.login .container {
+    width: 460px;
+    margin: 0 auto;
+    padding: 14px;    
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container::before, .container::after {
+    display: table;
+    content: "";
+}
+
+.container::after {
+    clear: both;
+}
+
+.well {
+    min-height: 20px;
+    padding: 19px 19px 0 19px;
+    margin-bottom: 20px;
+    background-color: whiteSmoke;
+    border: 1px solid #EEE;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.page-header {
+    padding-bottom: 17px;
+    margin: 18px 0;
+    border-bottom: 1px solid #EEE;
+}
+
+.page-header h1 {
+    line-height: 1;
+}
+
+/** Nav-Bar **/
+
+.navbar {
+    margin-bottom: 18px;
+    overflow: visible;
+}
+
+.navbar {
+    color: #999;
+}
+
+.nav {
+    margin-bottom: 18px;
+    margin-left: 0;
+    list-style: none;
+}
+
+.navbar .brand {
+    display: block;
+    float: left;
+    padding: 8px 20px 12px;
+    margin-left: -20px;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1;
+    color: #999;
+}
+
+.navbar .nav {
+    position: relative;
+    left: 0;
+    display: block;
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+.nav > li > a {
+    display: block;
+}
+
+.navbar .nav > li {
+    display: block;
+    float: left;
+}
+
+.navbar .nav > li > a {
+    float: none;
+    padding: 9px 10px 11px;
+    line-height: 19px;
+    color: #999;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.navbar .nav> li > a:hover
+{
+    color:#ffffff;
+    text-decoration:none;
+    background-color:transparent;
+}
+
+.navbar .nav .active > a, .navbar .nav .active > a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #222;
+}
+
+.navbar .user-info {
+    position: relative;
+    left: 0;
+    display: block;
+    float: right;
+    margin: 0 10px 0 0;
+}
+
+.user-info > li > a {
+    display: block;
+}
+
+.user-info > li > span {
+    display: block;
+}
+
+.navbar .user-info > li {
+    display: block;
+    float: left;
+}
+
+.navbar .user-info > li > a {
+    float: none;
+    padding: 9px 10px 11px;
+    line-height: 19px;
+    color: #999;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.navbar .user-info > li > span {
+    float: none;
+    padding: 9px 10px 11px;
+    line-height: 19px;
+    color: #999;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.navbar .user-info> li > a:hover
+{
+    color:#ffffff;
+    text-decoration:none;
+    background-color:transparent;
+}
+
+.navbar .user-info .active > a, .navbar .user-info .active > span, .navbar .user-info .active > a:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #222;
+}
+
+.navbar-fixed-top{
+    top: 0;
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    margin-bottom: 0;
+}
+
+.navbar-inner {
+    min-height: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #2C2C2C;
+    background-image: -moz-linear-gradient(top, #333, #222);
+    background-image: -ms-linear-gradient(top, #333, #222);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333), to(#222));
+    background-image: -webkit-linear-gradient(top, #333, #222);
+    background-image: -o-linear-gradient(top, #333, #222);
+    background-image: linear-gradient(top, #333, #222);
+    background-repeat: repeat-x;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#333333', endColorstr='#222222', GradientType=0);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner {
+    padding-right: 0;
+    padding-left: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.navbar .container {
+    width: auto;
+}
+
+.container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+    width: 940px;
+}
+
+.navbar-fixed-top .container, .navbar-fixed-bottom .container {
+    width: 940px;
+}
+
+
+/* Buttons */
+
+.btn {
+    font-size: 13px;
+    line-height: 18px;
+    color: #333;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    cursor: pointer;
+}
+
+.btn {
+    display: inline-block;
+    padding: 4px 10px 4px;
+    margin-bottom: 0;
+    font-size: 13px;
+    line-height: 18px;
+    color: #333;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: whiteSmoke;
+    background-image: -ms-linear-gradient(top, white, #E6E6E6);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#E6E6E6));
+    background-image: -webkit-linear-gradient(top, white, #E6E6E6);
+    background-image: -o-linear-gradient(top, white, #E6E6E6);
+    background-image: linear-gradient(top, white, #E6E6E6);
+    background-image: -moz-linear-gradient(top, white, #E6E6E6);
+    background-repeat: repeat-x;
+    border: 1px solid #CCC;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    border-bottom-color: #B3B3B3;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#ffffff', endColorstr='#e6e6e6', GradientType=0);
+    filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2),0 1px 2px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2),0 1px 2px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2),0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.btn-primary, .btn-primary:hover, .btn-warning, .btn-warning:hover, .btn-danger, .btn-danger:hover, .btn-success, .btn-success:hover, .btn-info, .btn-info:hover, .btn-inverse, .btn-inverse:hover {
+    color: white;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.btn {
+    border-color: #CCC;
+}
+
+.btn-success {
+    background-color: #5BB75B;
+    background-image: -ms-linear-gradient(top, #62C462, #51A351);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62C462), to(#51A351));
+    background-image: -webkit-linear-gradient(top, #62C462, #51A351);
+    background-image: -o-linear-gradient(top, #62C462, #51A351);
+    background-image: -moz-linear-gradient(top, #62C462, #51A351);
+    background-image: linear-gradient(top, #62C462, #51A351);
+    background-repeat: repeat-x;
+    border-color: #51A351 #51A351 #387038;
+    filter: progid:dximagetransform.microsoft.gradient(startColorstr='#62c462', endColorstr='#51a351', GradientType=0);
+    filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+}
+
+/* Icons */
+
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+    cursor: pointer;
+    -webkit-appearance: button;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    vertical-align: text-top;
+    background-image: url(images/glyphicons-halflings.png);
+    background-position: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    vertical-align: text-top;
+    background-image: url(images/glyphicons-halflings.png);
+    background-position: 14px 14px;
+    background-repeat: no-repeat;
+}
+
+.icon-white {
+    background-image: url(images/glyphicons-halflings-white.png);
+}
+
+.icon-plus {
+    background-position: -408px -96px;
+}
+
+.icon-lock{
+    background-position:-287px -24px;
+}
+
+
+

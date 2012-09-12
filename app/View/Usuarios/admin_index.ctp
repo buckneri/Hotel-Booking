@@ -1,6 +1,6 @@
-<div class="page-top">
-    <div class="page-title">T&iacute;tulo de P&aacute;gina</div>
+<div class="page-header">
+    <h1>T&iacute;tulo de P&aacute;gina</h1>
 </div>
-<div class="page-content">
-    <p><?php echo $sessionExpire;?></p>
-</div>
+<blockquote>
+    <p>Tiempo de caducidad de la sesion: <?php echo $sessionExpire;?></p>
+</blockquote>

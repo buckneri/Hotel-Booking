@@ -1,5 +1,4 @@
 
-<h3>Ingreso al sistema de administraci&oacute;n</h3>
 <?php echo $this->Form->create('Usuario', array('id' => 'frmLogin', 'class' => 'form-horizontal'))?>
 <fieldset class="custom-align-left">
     <div class="control-group">
@@ -15,8 +14,11 @@
         </div>
     </div>
     <div class="control-group">        
-        <div class="controls">
-            <?php echo $this->Form->button('Login', array('label' => false, 'div' => false, 'id' => 'btnPassword', 'class' => 'btn btn-large btn-primary'));?>
+        <div class="controls">            
+            <button type="submit" class="btn btn-success">
+                <i class="icon-lock icon-white"></i>
+                <span>Login</span>
+            </button>
             <label class="checkbox remember"><?php echo $this->Form->input('persist', array('label' => false, 'div' => false, 'id' => 'chkPersist', 'type' => 'checkbox'));?>Mantener sesi&oacute;n abierta</label>
         </div>        
     </div>
