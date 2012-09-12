@@ -173,7 +173,9 @@
  *
  */
 	Configure::write('Session', array(
-		'defaults' => 'database'
+		'defaults' => 'database',
+                'timeout' => 30,
+                'cookieTimeout' => 0 // No cookies
 	));
 
 /**

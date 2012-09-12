@@ -20,6 +20,7 @@
     </head>
     <body class="login">
         <h1>Hotel Booking</h1>
+        <?php echo $this->Session->flash();?>
         <div id="container" class="container">
             <?php echo $this->fetch('content'); ?>
         </div>

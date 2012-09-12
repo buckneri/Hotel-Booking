@@ -26,6 +26,7 @@
  */
 
         Router::connect('/admin', array('controller' => 'Usuarios', 'action' => 'login', 'admin' => true));
+        Router::connect('/admin/logout', array('controller' => 'Usuarios', 'action' => 'logout', 'admin' => true));
 
 /**
  * Here, we are connecting '/' (base path) to controller called 'Pages',

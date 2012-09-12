@@ -30,7 +30,7 @@
                     <li><a href="#">Menu Item 3</a></li>                    
                 </ul>
                 <div class="user-info">
-                    Logged in as Admin (admin) <a href="#">logout</a>
+                    Logged in as Admin (admin) <?php echo $this->Html->link('Logout', '/admin/logout');?>
                 </div>
             </div>
             <div class="content-box">

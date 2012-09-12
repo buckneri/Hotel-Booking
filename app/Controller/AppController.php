@@ -33,13 +33,19 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
     
-    public $components = array('Session', 'Auth' => array(
+    public $components = array('Cookie','Session', 'Auth' => array(
         'authorize' => 'Controller',
         'logoutRedirect' => '/admin/logout',
         'authError' => 'Acceso no autorizado'
     ));
     
-    function beforeFilter(){
+    function beforeFilter(){ 
+        
+        if($this->Cookie->read('PersistSession') == true){
+            // Mantener sesion activa por 6 horas
+            Configure::write('Session.timeout', 360);            
+        }
+        
         // El ususario esta intentando acceder al area administrativa
         if(isset($this->params['admin']) && $this->params['admin'] == true){
             // Se configura el modelo de autenticacion
@@ -54,6 +60,7 @@ class AppController extends Controller {
             );
             // Se configura la accion por defecto para login
             $this->Auth->loginAction = '/admin';
+                        
         }
     }
     
