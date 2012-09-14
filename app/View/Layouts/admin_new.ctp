@@ -9,9 +9,16 @@
         <?php
 		echo $this->Html->meta('icon');
 
-                echo $this->Html->css('style');
-		echo $this->Html->css('bootstrap_min');
-                echo $this->Html->css('bootstrap_min_responsive');
+                
+                echo $this->Html->css('jquery.qtip', null, array('inline' => true));                
+                echo $this->Html->css('style', null, array('inline' => true));
+		echo $this->Html->css('bootstrap_min', null, array('inline' => true));
+                echo $this->Html->css('bootstrap_min_responsive', null, array('inline' => true));                
+                
+                echo $this->Html->script('jquery-1.7.2', true);
+                echo $this->Html->script('jquery-ui-1.8.21.custom.min', true);
+                echo $this->Html->script('jquery.qtip', true);
+                echo $this->Html->script('global', true);
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -27,17 +34,8 @@
                     <div class="nav-collapse">
                         <ul class="nav">
                             <li class="active">
-                                <a href="#">Active</a>
-                            </li>
-                            <li>
-                                <a href="#">Menu Item 1</a>
-                            </li>
-                            <li>
-                                <a href="#">Menu Item 2</a>
-                            </li>
-                            <li>
-                                <a href="#">Menu Item 3</a>
-                            </li>
+                                <a href="#">Habitaciones</a>
+                            </li>                            
                         </ul>
                         <ul class="user-info">
                             <li class="active"><span>Logged in as Admin (admin)</span></li>

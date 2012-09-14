@@ -10,9 +10,31 @@
 @media(min-width: 1200px){
     .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
         width: 1170px;
-    }    
+    }        
+    
+    .row{
+        margin-left: -30;
+    }
+    
+    .row::before, .row::after{
+        display:table;
+        content:"";
+    }
+    
+    .row::after{
+        clear:both;
+    }
+    
+    [class*="span"]{
+        float:left;
+        margin-left: 30px;
+    }
+    
+    .span7{
+        width: 670px;
+    }
+        
 }
-
 
 
 
