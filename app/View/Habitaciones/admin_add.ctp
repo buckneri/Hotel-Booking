@@ -47,8 +47,8 @@
     <div class="control-group">
         <label class="control-label" for="data[Habitacion][por_noche]">Precio</label>
         <div class="controls">
-            <input type="radio" name="precioPor" id="rdoPrecioPorPersona" value="1"/>Por Persona&nbsp;
-            <input type="radio" name="precioPor" id="rdoPrecioPorNoche" value="0" checked />Por Noche
+            <input type="radio" name="precioPor" id="rdoPrecioPorPersona" value="1" <?php echo ($this->data['Habitacion']['por_persona'] == '1' ? 'checked' : '');?>/>Por Persona&nbsp;
+            <input type="radio" name="precioPor" id="rdoPrecioPorNoche" value="0" <?php echo ($this->data['Habitacion']['por_noche'] == '1' ? 'checked' : '');?> />Por Noche
             <?php echo $this->Form->input('por_noche', array('label' => false, 'div' => false, 'id' => 'hdnPorNoche', 'type' => 'hidden', 'value' => '1'));?>
             <?php echo $this->Form->input('por_persona', array('label' => false, 'div' => false, 'id' => 'hdnPorPersona', 'type' => 'hidden', 'value' => '0'));?>
         </div>

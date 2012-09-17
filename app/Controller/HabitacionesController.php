@@ -17,6 +17,14 @@ class HabitacionesController extends AppController{
     }
     
     /**
+     * Despliega el listado de habitaciones 
+     */
+    function admin_index(){
+        $this->layout = 'admin_new';
+        $this->set('habitaciones', $this->Habitacion->find('all'));
+    }
+    
+    /**
      * Agrega una nueva habitación y redirecciona a la sección de fotos 
      * 
      */
@@ -71,6 +79,8 @@ class HabitacionesController extends AppController{
         }
         else{
             // Despliega el formulario
+            $this->request->data['Habitacion']['por_persona'] = '0';
+            $this->request->data['Habitacion']['por_noche'] = '1';
             $this->set('tipos', $this->Habitacion->Tipo->find('list'));
         }
     }

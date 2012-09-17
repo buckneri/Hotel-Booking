@@ -15,6 +15,18 @@ body {
     background-color: white;
 }
 
+table {
+    max-width: 100%;
+    background-color: transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
 fieldset {
     padding: 0;
     margin: 0;
@@ -226,6 +238,31 @@ body.login .container {
     width: 460px;
     margin: 0 auto;
     padding: 14px;    
+}
+
+.fade {
+    opacity: 0;
+    -webkit-transition: opacity 0.15s linear;
+    -moz-transition: opacity 0.15s linear;
+    -ms-transition: opacity 0.15s linear;
+    -o-transition: opacity 0.15s linear;
+    transition: opacity 0.15s linear;
+}
+
+.table th, .table td {
+    padding: 8px;
+    line-height: 18px;
+    text-align: left;
+    vertical-align: top;
+    border-top: 1px solid #DDD;
+}
+
+.table-striped tbody tr:nth-child(odd) td, .table-striped tbody tr:nth-child(odd) th {
+    background-color: #F9F9F9;
+}
+
+.fade.in {
+    opacity: 1;
 }
 
 .container {

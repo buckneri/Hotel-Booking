@@ -18,9 +18,14 @@ $(document).ready(function(){
         });
     });
     
-    // Esconde la seccion de precios por persona y por habitacion
-    $('#divPrecioPorPersona').hide();
-    //$('#divPrecioPorHabitacion').hide();
+    // Esconde la seccion de precios por persona o por habitacion
+    if($('#rdoPrecioPorPersona').attr('checked') == 'checked'){        
+        $('#divPrecioPorHabitacion').hide();
+    }
+    else{
+        $('#divPrecioPorPersona').hide();
+    }
+    
     
     /**
      * Event Bindings

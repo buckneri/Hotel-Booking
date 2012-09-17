@@ -14,6 +14,10 @@ class Habitacion extends AppModel{
             'required' => array(
                 'rule' => 'notEmpty',
                 'message' => 'El número de habitación es un campo requerido'
+            ),
+            'unique' => array(
+                'rule' => 'isUnique',
+                'message' => 'Este número de habitación ya existe'
             )
         ),
         'id_tipo' => array(
